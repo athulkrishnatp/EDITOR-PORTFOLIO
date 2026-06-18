@@ -1,0 +1,5 @@
+﻿C:\Users\Netcom\Downloads\portfolio files exists: True
+C:\Users\Netcom\Downloads exists: False
+C:\Users\Netcom exists: False
+C:\Users exists: False
+C:\ exists: False

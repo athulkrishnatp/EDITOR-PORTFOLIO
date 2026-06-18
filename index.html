@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Athulkrishna T P - Cinematic Video Editor, Videographer and Content Creator Portfolio.">
+  <title>Athulkrishna T P | Cinematic Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Premium Neon Cursor -->
+  <div class="custom-cursor" id="custom-cursor">
+    <div class="cursor-ring-outer"></div>
+    <div class="cursor-ring-middle"></div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-cross-h"></div>
+    <div class="cursor-cross-h right"></div>
+    <div class="cursor-cross-v"></div>
+  </div>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar" id="scroll-progress-bar"></div>
+  </div>
+
+  <!-- Loading Screen -->
+  <div class="loading-screen" id="loading-screen">
+    <div class="loading-content">
+      <div class="loading-label glow-animate">EDITOR PORTFOLIO</div>
+      <div class="loading-title gradient-text">ATHULKRISHNA T P</div>
+      <div class="loading-track">
+        <div class="loading-bar" id="loading-bar"></div>
+      </div>
+      <div class="loading-pct" id="loading-pct">000%</div>
+    </div>
+  </div>
+
+  <!-- Background Particle Canvas -->
+  <canvas class="fixed-background" id="particle-canvas"
+    style="position: fixed; inset: 0; z-index: 0; pointer-events: none;"></canvas>
+
+  <!-- Header -->
+  <header class="glass">
+    <div class="header-container max-width-limit">
+      <div class="logo gradient-text">
+        AT <span style="color: var(--cyan);">•</span> P
+      </div>
+      <nav class="nav-links">
+        <button class="nav-link" data-section="about">About</button>
+        <button class="nav-link" data-section="showreel">Showreel</button>
+        <button class="nav-link" data-section="videos">Work</button>
+        <button class="nav-link" data-section="posters">Posters</button>
+        <button class="nav-link" data-section="case-studies">Process</button>
+        <button class="nav-link" data-section="skills">Skills</button>
+        <button class="nav-link" data-section="services">Services</button>
+        <button class="nav-link" data-section="contact">Contact</button>
+      </nav>
+
+      <!-- Mobile Menu Trigger Button -->
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle mobile menu">
+        <i data-lucide="menu" style="width: 20px; height: 20px;"></i>
+      </button>
+
+      <div class="live-indicator glow-animate">
+        ● LIVE
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay Drawer -->
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+    <div class="mobile-menu-container glass">
+      <div class="mobile-menu-header">
+        <div class="logo gradient-text">AT <span style="color: var(--cyan);">•</span> P</div>
+        <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close menu">
+          <i data-lucide="x" style="width: 20px; height: 20px;"></i>
+        </button>
+      </div>
+      <nav class="mobile-nav-links">
+        <button class="mobile-nav-link" data-section="about">About</button>
+        <button class="mobile-nav-link" data-section="showreel">Showreel</button>
+        <button class="mobile-nav-link" data-section="videos">Work</button>
+        <button class="mobile-nav-link" data-section="posters">Posters</button>
+        <button class="mobile-nav-link" data-section="case-studies">Process</button>
+        <button class="mobile-nav-link" data-section="skills">Skills</button>
+        <button class="mobile-nav-link" data-section="services">Services</button>
+        <button class="mobile-nav-link" data-section="contact">Contact</button>
+      </nav>
+      <div class="mobile-menu-footer">
+        <span class="live-indicator glow-animate" style="display: inline-block;">● LIVE STUDIO</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll Container -->
+  <main class="scroll-area" id="scroll-container">
+
+    <!-- ========== HERO SECTION ========== -->
+    <section id="hero" class="hero-section section-active">
+      <div class="hero-3d-container" id="holo-scene-mount"></div>
+      <div class="hero-content max-width-limit">
+        <div class="rec-badge">
+          <span class="rec-badge-dot rec-dot"></span>
+          <span class="rec-badge-text">●REC</span>
+          <span style="opacity: 0.5;">·</span>
+          <span>CAPTURING STORIES IN MOTION</span>
+        </div>
+
+        <h1 class="hero-title">
+          Transforming <span class="gradient-text">Raw Footage</span> Into <span class="gradient-text">Cinematic</span>
+          Masterpieces
+        </h1>
+
+        <p class="hero-subtitle">
+          Video Editor • Videographer • Content Creator
+        </p>
+
+        <p class="hero-tagline">
+          "Every frame has a story. My mission is to make it unforgettable."
+        </p>
+
+        <div class="hero-buttons">
+          <button class="btn-primary" data-scroll="videos">View My Work</button>
+          <button class="btn-ghost" data-scroll="contact">Get In Touch</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section id="about" class="max-width-limit">
+      <div class="section-eyebrow">
+        <span class="section-eyebrow-seq">SEQ_02/08</span>
+        <span class="section-eyebrow-line"></span>
+        <span class="section-eyebrow-label">CREATOR PROFILE</span>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image-wrapper float">
+          <div class="vf-corner top-4 left-4"></div>
+          <div class="vf-corner top-4 right-4"></div>
+          <div class="vf-corner bottom-4 left-4"></div>
+          <div class="vf-corner bottom-4 right-4"></div>
+
+          <img id="profile-img" src="uploads/athulkrishna.jpg" alt="Athulkrishna T P">
+
+          <div class="about-img-overlay-top">
+            <span class="about-img-overlay-top-rec">
+              <span class="rec-badge-dot rec-dot"></span> REC
+            </span>
+            <span>4K · 24fps</span>
+          </div>
+          <div class="about-img-overlay-bottom">
+            <span>@i.krizhh</span>
+            <span class="about-img-overlay-bottom-edited">EDITED</span>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="about-info-title">Athulkrishna T P</h2>
+          <p class="about-info-meta">Age 19 • Ernakulam,Kerala, India • Since 2006</p>
+
+          <p class="about-info-desc">
+            An aspiring creative visionary specializing in video editing, videography, and digital content creation.
+            I transform raw ideas into engaging visual experiences through cinematic editing, strategic sound design,
+            and compelling storytelling. Continuously evolving my craft to deliver premium-quality content that
+            resonates.
+          </p>
+
+          <div class="about-stats-grid">
+            <div class="about-stat-card glass">
+              <div class="about-stat-label">AGE</div>
+              <div class="about-stat-value gradient-text">19</div>
+            </div>
+            <div class="about-stat-card glass">
+              <div class="about-stat-label">EXPERIENCE</div>
+              <div class="about-stat-value gradient-text">3+ Yrs</div>
+            </div>
+            <div class="about-stat-card glass">
+              <div class="about-stat-label">PROJECTS</div>
+              <div class="about-stat-value gradient-text">50+</div>
+            </div>
+          </div>
+
+          <button class="btn-text" data-scroll="contact">
+            Start A Project <i data-lucide="arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SHOWREEL SECTION ========== -->
+    <section id="showreel" class="max-width-limit">
+      <div class="section-eyebrow">
+        <span class="section-eyebrow-seq">SEQ_03/08</span>
+        <span class="section-eyebrow-line"></span>
+        <span class="section-eyebrow-label">HIGHLIGHT REEL</span>
+      </div>
+
+      <div class="showreel-container reveal">
+        <div class="showreel-header" style="margin-bottom: 2rem;">
+          <h2 class="videos-title">Cinematic Showreel 2026</h2>
+          <p class="videos-desc">
+            A high-impact collection of visual highlights showcasing motion design, video editing, pacing, and
+            storytelling mastery.
+          </p>
+        </div>
+
+        <div class="showreel-player-wrapper shadow-neon-cyan"
+          style="position: relative; width: 100%; aspect-ratio: 16/9; border-radius: 1.5rem; overflow: hidden; border: 1px solid var(--border); background: #000;">
+          <video id="main-showreel-video" src="uploads/sixth.mp4" loop playsinline
+            style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"></video>
+          <div class="showreel-video-overlay" id="showreel-video-overlay"
+            style="position: absolute; inset: 0; background: rgba(0,0,0,0.4); display: flex; align-items: center; justify-content: center; z-index: 5; transition: opacity 0.3s; cursor: pointer;">
+            <button class="showreel-play-btn" id="showreel-play-btn" aria-label="Play Showreel"
+              style="width: 5rem; height: 5rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--cyan), var(--purple)); border: none; box-shadow: 0 0 30px rgba(0, 229, 255, 0.5); cursor: pointer; transition: transform 0.2s;">
+              <i data-lucide="play" style="width: 32px; height: 32px; fill: white; color: white; margin-left: 4px;"></i>
+            </button>
+          </div>
+          <div class="showreel-controls-bar" id="showreel-controls-bar"
+            style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.9), transparent); padding: 1.5rem; display: flex; align-items: center; gap: 1rem; z-index: 15; transform: translateY(100%); transition: transform 0.3s;">
+            <button class="control-btn" id="showreel-mute-btn" aria-label="Mute Video"
+              style="background: transparent; border: none; color: #fff; cursor: pointer;">
+              <i data-lucide="volume-2" style="width: 18px; height: 18px;"></i>
+            </button>
+            <div class="timeline-bar-wrapper"
+              style="flex: 1; height: 4px; background: rgba(255,255,255,0.2); border-radius: 2px; position: relative; cursor: pointer;">
+              <div class="timeline-progress" id="showreel-progress"
+                style="width: 0%; height: 100%; background: linear-gradient(90deg, var(--cyan), var(--purple)); border-radius: 2px;">
+              </div>
+            </div>
+            <span class="time-display text-2xs font-mono" id="showreel-time" style="color: var(--muted);">00:00</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== WORK SHOWCASE SECTION ========== -->
+    <section id="videos" class="max-width-limit">
+      <div class="section-eyebrow">
+        <span class="section-eyebrow-seq">SEQ_04/08</span>
+        <span class="section-eyebrow-line"></span>
+        <span class="section-eyebrow-label">PORTFOLIO SHOWCASE</span>
+      </div>
+
+      <div class="videos-intro">
+        <h2 class="videos-title">My Work In Motion</h2>
+        <p class="videos-desc">
+          Explore a curated selection of my best video edits, from cinematic pieces to fast-paced social content.
+        </p>
+      </div>
+
+      <!-- Category Filtering Tabs -->
+      <div class="video-filters" id="video-filters"
+        style="display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 2rem; position: relative; z-index: 10;">
+        <button class="btn-ghost filter-btn active" data-filter="all"
+          style="padding: 0.5rem 1.25rem; font-size: 0.75rem; border-radius: 9999px; border-color: var(--cyan); color: var(--cyan);">All
+          Work</button>
+        <button class="btn-ghost filter-btn" data-filter="promo reels"
+          style="padding: 0.5rem 1.25rem; font-size: 0.75rem; border-radius: 9999px;">Promo Reels</button>
+        <button class="btn-ghost filter-btn" data-filter="Cinematic slowmo Edits"
+          style="padding: 0.5rem 1.25rem; font-size: 0.75rem; border-radius: 9999px;">Cinematic Slowmo</button>
+        <button class="btn-ghost filter-btn" data-filter="Timeline Edits"
+          style="padding: 0.5rem 1.25rem; font-size: 0.75rem; border-radius: 9999px;">Timeline Edits</button>
+        <button class="btn-ghost filter-btn" data-filter="fast cuts"
+          style="padding: 0.5rem 1.25rem; font-size: 0.75rem; border-radius: 9999px;">Fast Cuts</button>
+      </div>
+
+      <!-- Video Grid filled dynamically by JS -->
+      <div class="videos-grid" id="videos-grid"></div>
+
+      <!-- Featured Instagram Reel Segment -->
+      <div class="featured-instagram-reel reveal glass"
+        style="margin-top: 4rem; padding: 2rem; border-radius: 1.5rem; display: flex; flex-direction: column; gap: 2rem; align-items: center; border: 1px solid var(--border);">
+        <div style="text-align: center; max-width: 32rem;">
+          <h3 class="font-display text-xl sm:text-2xl font-bold mb-2">Latest Instagram Reel</h3>
+          <p style="color: var(--muted);" class="text-sm">Synchronized latest edit from <a
+              href="https://www.instagram.com/k3.magic" target="_blank" rel="noreferrer" class="gradient-text"
+              style="text-decoration: none; font-weight: 600;">@k3.magic</a>. Hover to preview play.</p>
+        </div>
+        <div class="instagram-reel-preview-card" id="instagram-reel-card"
+          style="width: 100%; max-width: 340px; aspect-ratio: 9/16; border-radius: 1rem; overflow: hidden; position: relative; cursor: pointer; border: 1px solid var(--border); box-shadow: 0 0 30px rgba(217, 70, 239, 0.15);">
+          <video id="instagram-reel-video" src="uploads/fifth.mp4" muted loop playsinline
+            style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;"></video>
+          <div class="video-card-overlay"
+            style="position: absolute; inset: 0; background-color: rgba(0,0,0,0.3); transition: background-color 0.3s; pointer-events: none;">
+          </div>
+          <div class="video-play-btn"
+            style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none;">
+            <i data-lucide="play" style="width: 24px; height: 24px;"></i>
+          </div>
+          <div
+            style="position: absolute; bottom: 0; left: 0; right: 0; padding: 1.5rem; background: linear-gradient(to top, rgba(0,0,0,0.9), transparent); z-index: 10; display: flex; flex-direction: column; gap: 0.5rem; pointer-events: none;">
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <i data-lucide="instagram" style="width: 16px; height: 16px; color: var(--purple);"></i>
+              <span style="font-family: var(--font-mono); font-size: 0.75rem; color: #fff;">@k3.magic</span>
+            </div>
+            <p style="font-size: 0.875rem; color: var(--text); font-weight: 500;">Latest Magic Edit</p>
+          </div>
+          <a href="https://www.instagram.com/reel/DPbeRHsk2_6/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+            target="_blank" rel="noreferrer" class="btn-ghost"
+            style="position: absolute; top: 1rem; right: 1rem; padding: 0.5rem 0.875rem; font-size: 0.75rem; border-radius: 9999px; text-decoration: none; z-index: 20; display: flex; align-items: center; gap: 0.25rem;">
+            Watch <i data-lucide="external-link" style="width: 12px; height: 12px;"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== POSTERS (GRAPHIC DESIGN) SECTION ========== -->
+    <section id="posters" class="max-width-limit">
+      <div class="section-eyebrow">
+        <span class="section-eyebrow-seq">SEQ_05/09</span>
+        <span class="section-eyebrow-line"></span>
+        <span class="section-eyebrow-label">KEY ART ARCHIVE</span>
+      </div>
+
+      <div class="videos-intro">
+        <h2 class="videos-title">Poster Design Collection</h2>
+        <p class="videos-desc">
+          Click the pages to flip through the interactive 3D portfolio book showcasing key art, event posters, and
+          design concepts.
+        </p>
+      </div>
+
+      <div class="book-container-wrapper">
+        <!-- Desktop 3D Page Flip Book -->
+        <div class="book-container">
+          <div class="book" id="poster-book">
+
+            <!-- Page 1: COVER -->
+            <div class="book-page" style="z-index: 6;">
+              <div class="page-front book-cover-front">
+                <div class="cyber-scanline"></div>
+                <div class="cyber-corner top-left"></div>
+                <div class="cyber-corner top-right"></div>
+                <div class="cyber-corner bottom-left"></div>
+                <div class="cyber-corner bottom-right"></div>
+                <div
+                  style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--cyan); letter-spacing: 0.25em; position: relative; z-index: 6;">
+                  ATHULKRISHNA T P</div>
+                <h3 class="font-display"
+                  style="font-size: 2.25rem; font-weight: 800; margin: 1.5rem 0; line-height: 1.1; letter-spacing: -0.03em; position: relative; z-index: 6;">
+                  POSTER<br><span class="gradient-text">ARCHIVE</span></h3>
+                <div
+                  style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--muted); border-top: 1px solid var(--border); padding-top: 1rem; width: 80%; position: relative; z-index: 6;">
+                  VISUAL DESIGNS &bull; 2026</div>
+                <p
+                  style="font-size: 0.75rem; color: var(--cyan); margin-top: 2rem; animation: pulse-rec 1.5s infinite; position: relative; z-index: 6;">
+                  Click cover to open</p>
+              </div>
+              <div class="page-back book-cover-back">
+                <div class="cyber-scanline"></div>
+                <div class="cyber-corner top-left" style="border-color: var(--purple);"></div>
+                <div class="cyber-corner top-right" style="border-color: var(--purple);"></div>
+                <div class="cyber-corner bottom-left" style="border-color: var(--purple);"></div>
+                <div class="cyber-corner bottom-right" style="border-color: var(--purple);"></div>
+                <div class="page-details-content">
+                  <div class="page-details-header">
+                    <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--purple);">SYS_INFO //
+                      [00]</span>
+                    <h4 class="page-details-title">Design Philosophy</h4>
+                  </div>
+                  <div class="page-details-body">
+                    <p class="page-details-desc">
+                      Every project requires a unique visual identity. This design archive collects promotional posters,
+                      custom key art, and experimental graphic work created to capture attention and deliver high-impact
+                      visual communication.
+                    </p>
+                    <p class="page-details-desc">
+                      Leveraging industry-standard tools and a sharp eye for layout, typography, and color harmony.
+                    </p>
+                  </div>
+                  <div
+                    style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--muted); text-align: center;">
+                    ATHULKRISHNA T P &copy; 2026</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Page 2: POSTER 1 -->
+            <div class="book-page" style="z-index: 5;">
+              <div class="page-front">
+                <div class="cyber-corner top-left"></div>
+                <div class="cyber-corner top-right"></div>
+                <div class="cyber-corner bottom-left"></div>
+                <div class="cyber-corner bottom-right"></div>
+                <img src="posters/poster1.jpeg" alt="Cinematic Poster 1">
+              </div>
+              <div class="page-back">
+                <div class="cyber-corner top-left"></div>
+                <div class="cyber-corner top-right"></div>
+                <div class="cyber-corner bottom-left"></div>
+                <div class="cyber-corner bottom-right"></div>
+                <div class="page-details-content">
+                  <div class="page-details-header">
+                    <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--cyan);">SYS_INFO //
+                      [01]</span>
+                    <h4 class="page-details-title">Cinematic Key Art</h4>
+                  </div>
+                  <div class="page-details-body">
+                    <div class="page-details-spec">
+                      <span class="page-details-spec-label">CLIENT / USE</span>
+                      <span class="page-details-spec-value">Short Film Release</span>
+                    </div>
+                    <div class="page-details-spec">
+                      <span class="page-details-spec-label">SOFTWARE</span>
+                      <span class="page-details-spec-value">Lightroom & Photoshop</span>
+                    </div>
+                    <div class="page-details-spec">
+                      <span class="page-details-spec-label">COLOR SPACE</span>
+                      <span class="page-details-spec-value">Orange & Teal / sRGB</span>
+                    </div>
+                    <p class="page-details-desc">
+                      A premium, moody film key art poster highlighting dramatic lighting, cinematic color grading, and
+                      heavy shadow manipulation to build suspense.
+                    </p>
+                  </div>
+                  <div
+                    style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--muted); text-align: center;">
+                    FLIP FOR NEXT POSTER</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Page 3: POSTER 2 -->
+            <div class="book-page" style="z-index: 4;">
+              <div class="page-front">
+                <div class="cyber-corner top-left"></div>
+                <div class="cyber-corner top-right"></div>
+                <div class="cyber-corner bottom-left"></div>
+                <div class="cyber-corner bottom-right"></div>
+                <img src="posters/poster2.jpeg" alt="Event Poster 2">
+              </div>
+              <div class="page-back">
+                <div class="cyber-corner top-left"></div>
+                <div class="cyber-corner top-right"></div>
+                <div class="cyber-corner bottom-left"></div>
+                <div class="cyber-corner bottom-right"></div>
+                <div class="page-details-content">
+                  <div class="page-details-header">
+                    <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--purple);">SYS_INFO //
+                      [02]</span>
+                    <h4 class="page-details-title">College Freshers Event</h4>
+                  </div>
+                  <div class="page-details-body">
+                    <div class="page-details-spec">
+                      <span class="page-details-spec-label">CLIENT / USE</span>
+                      <span class="page-details-spec-value">College Event Promotion</span>
+                    </div>
+                    <div class="page-details-spec">
+                      <span class="page-details-spec-label">SOFTWARE</span>
+                      <span class="page-details-spec-value">Canva & PicsArt</span>
+                    </div>
+                    <div class="page-details-spec">
+                      <span class="page-details-spec-label">STYLE</span>
+                      <span class="page-details-spec-value">Modern Neon / Vibrant</span>
+                    </div>
+                    <p class="page-details-desc">
+                      High-energy promotional poster built for event marketing. Designed to grab immediate attention on
+                      Instagram with glowing neon vectors and clean typography hierarchy.
+                    </p>
+                  </div>
+                  <div
+                    style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--muted); text-align: center;">
+                    FLIP FOR NEXT POSTER</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Page 4: POSTER 3 -->
+            <div class="book-page" style="z-index: 3;">
+              <div class="page-front">
+                <div class="cyber-corner top-left"></div>
+                <div class="cyber-corner top-right"></div>
+                <div class="cyber-corner bottom-left"></div>
+                <div class="cyber-corner bottom-right"></div>
+                <img src="posters/poster3.jpeg" alt="Poster 3">
+              </div>
+              <div class="page-back">
+                <div class="cyber-corner top-left"></div>
+                <div class="cyber-corner top-right"></div>
+                <div class="cyber-corner bottom-left"></div>
+                <div class="cyber-corner bottom-right"></div>
+                <div class="page-details-content">
+                  <div class="page-details-header">
+                    <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--pink);">SYS_INFO //
+                      [03]</span>
+                    <h4 class="page-details-title">Visual Storytelling Art</h4>
+                  </div>
+                  <div class="page-details-body">
+                    <div class="page-details-spec">
+                      <span class="page-details-spec-label">CLIENT / USE</span>
+                      <span class="page-details-spec-value">Concept Art Study</span>
+                    </div>
+                    <div class="page-details-spec">
+                      <span class="page-details-spec-label">SOFTWARE</span>
+                      <span class="page-details-spec-value">Photoshop & Lightroom</span>
+                    </div>
+                    <div class="page-details-spec">
+                      <span class="page-details-spec-label">TECHNIQUE</span>
+                      <span class="page-details-spec-value">Image Compositing</span>
+                    </div>
+                    <p class="page-details-desc">
+                      A visual exercise exploring texture blending, retro film grain overlays, and customized font
+                      designs to evoke nostalgic emotions.
+                    </p>
+                  </div>
+                  <div
+                    style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--muted); text-align: center;">
+                    FLIP FOR NEXT POSTER</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Page 5: POSTER 4 -->
+            <div class="book-page" style="z-index: 2;">
+              <div class="page-front">
+                <div class="cyber-corner top-left"></div>
+                <div class="cyber-corner top-right"></div>
+                <div class="cyber-corner bottom-left"></div>
+                <div class="cyber-corner bottom-right"></div>
+                <img src="posters/poster4.jpeg" alt="Poster 4">
+              </div>
+              <div class="page-back book-cover-back">
+                <div class="cyber-scanline"></div>
+                <div class="cyber-corner top-left" style="border-color: var(--purple);"></div>
+                <div class="cyber-corner top-right" style="border-color: var(--purple);"></div>
+                <div class="cyber-corner bottom-left" style="border-color: var(--purple);"></div>
+                <div class="cyber-corner bottom-right" style="border-color: var(--purple);"></div>
+                <div class="page-details-content">
+                  <div class="page-details-header">
+                    <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--cyan);">SYS_INFO //
+                      [04]</span>
+                    <h4 class="page-details-title">Cyberpunk Layout</h4>
+                  </div>
+                  <div class="page-details-body">
+                    <div class="page-details-spec">
+                      <span class="page-details-spec-label">TYPE</span>
+                      <span class="page-details-spec-value">Social Media Graphic</span>
+                    </div>
+                    <div class="page-details-spec">
+                      <span class="page-details-spec-label">SOFTWARE</span>
+                      <span class="page-details-spec-value">PicsArt / After Effects</span>
+                    </div>
+                    <p class="page-details-desc">
+                      A cyberpunk-inspired vertical frame layout incorporating high-contrast color tones and modern
+                      digital overlays.
+                    </p>
+                  </div>
+                  <div
+                    style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--muted); text-align: center;">
+                    FLIP TO CLOSE BOOK</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Page 6: BACK COVER (Static underneath) -->
+            <div class="book-page" style="z-index: 1;">
+              <div class="page-front book-cover-front"
+                style="border: 2px solid var(--purple) !important; border-left: none !important;">
+                <div class="cyber-scanline"></div>
+                <div class="cyber-corner top-left" style="border-color: var(--purple);"></div>
+                <div class="cyber-corner top-right" style="border-color: var(--purple);"></div>
+                <div class="cyber-corner bottom-left" style="border-color: var(--purple);"></div>
+                <div class="cyber-corner bottom-right" style="border-color: var(--purple);"></div>
+                <h3 class="font-display"
+                  style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; position: relative; z-index: 6;">
+                  CREATIVE STUDIO</h3>
+                <p class="text-xs" style="color: var(--muted); position: relative; z-index: 6;">Athulkrishna T P &bull;
+                  2026</p>
+                <div style="margin-top: 2rem; position: relative; z-index: 6;">
+                  <button class="btn-ghost book-btn" id="book-reset-btn"
+                    style="padding: 0.5rem 1.25rem; font-size: 0.7rem; border-color: var(--purple);">Reset Book</button>
+                </div>
+              </div>
+              <div class="page-back"></div>
+            </div>
+
+          </div>
+          <div class="book-spine"></div>
+        </div>
+
+        <!-- Book Navigation Buttons -->
+        <div class="book-controls">
+          <button class="book-btn" id="book-prev-btn"><i data-lucide="arrow-left"
+              style="width: 14px; height: 14px;"></i> Prev Page</button>
+          <button class="book-btn" id="book-next-btn">Next Page <i data-lucide="arrow-right"
+              style="width: 14px; height: 14px;"></i></button>
+        </div>
+        <span class="book-page-indicator" id="book-page-indicator">PAGE 01 / 05 &mdash; COVER</span>
+
+        <!-- Mobile Scroll Gallery Fallback -->
+        <div class="mobile-poster-slider">
+          <div class="mobile-poster-card">
+            <div class="mobile-poster-img-wrapper">
+              <img src="posters/poster1.jpeg" alt="Poster 1">
+            </div>
+            <div class="mobile-poster-details">
+              <span style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--cyan);">01 / KEY ART</span>
+              <h4 class="font-display" style="font-weight: 700; font-size: 1.15rem;">Cinematic Key Art</h4>
+              <p class="text-xs" style="color: var(--muted); line-height: 1.5;">Moody film key art poster designed with
+                dramatic shadows and cinematic grading.</p>
+            </div>
+          </div>
+          <div class="mobile-poster-card">
+            <div class="mobile-poster-img-wrapper">
+              <img src="posters/poster2.jpeg" alt="Poster 2">
+            </div>
+            <div class="mobile-poster-details">
+              <span style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--purple);">02 / EVENT</span>
+              <h4 class="font-display" style="font-weight: 700; font-size: 1.15rem;">College Freshers Event</h4>
+              <p class="text-xs" style="color: var(--muted); line-height: 1.5;">Vibrant event release poster featuring
+                neon accents and strong visual hierarchy.</p>
+            </div>
+          </div>
+          <div class="mobile-poster-card">
+            <div class="mobile-poster-img-wrapper">
+              <img src="posters/poster3.jpeg" alt="Poster 3">
+            </div>
+            <div class="mobile-poster-details">
+              <span style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--pink);">03 / EDITORIAL</span>
+              <h4 class="font-display" style="font-weight: 700; font-size: 1.15rem;">Visual Storytelling Art</h4>
+              <p class="text-xs" style="color: var(--muted); line-height: 1.5;">Concept composition study utilizing
+                retro grain textures and custom layouts.</p>
+            </div>
+          </div>
+          <div class="mobile-poster-card">
+            <div class="mobile-poster-img-wrapper">
+              <img src="posters/poster4.jpeg" alt="Poster 4">
+            </div>
+            <div class="mobile-poster-details">
+              <span style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--cyan);">04 / CYBERPUNK</span>
+              <h4 class="font-display" style="font-weight: 700; font-size: 1.15rem;">Cyberpunk Layout</h4>
+              <p class="text-xs" style="color: var(--muted); line-height: 1.5;">High-contrast vertical design featuring
+                modern tech overlays and aesthetic elements.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CASE STUDIES (PROCESS) SECTION ========== -->
+    <section id="case-studies" class="max-width-limit">
+      <div class="section-eyebrow">
+        <span class="section-eyebrow-seq">SEQ_06/09</span>
+        <span class="section-eyebrow-line"></span>
+        <span class="section-eyebrow-label">PROCESS BREAKDOWNS</span>
+      </div>
+
+      <div class="case-studies-header reveal">
+        <h2 class="videos-title">Technical Case Studies</h2>
+        <p class="videos-desc">
+          Behind every edit is a calculated strategy. Drag, toggle, and click below to explore my workflow in action.
+        </p>
+      </div>
+
+      <div class="case-studies-container"
+        style="display: flex; flex-direction: column; gap: 6rem; margin-top: 4rem; position: relative; z-index: 10;">
+
+        <div class="case-study-card reveal glass">
+          <div class="case-study-grid"
+            style="display: grid; grid-template-columns: 1fr; gap: 2.5rem; align-items: center;">
+
+            <!-- Dynamic Grading Slider Area -->
+            <div class="grading-slider-container shadow-neon-cyan"
+              style="position: relative; width: 100%; aspect-ratio: 9/16; max-width: 340px; margin: 0 auto; border-radius: 1rem; overflow: hidden; border: 1px solid var(--border); user-select: none;">
+              <!-- Graded Video (Base) -->
+              <video id="grading-video-graded" src="uploads/first.mp4" loop muted playsinline
+                style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;"></video>
+
+              <!-- Raw Video (Clipped top layer) -->
+              <div class="grading-raw-wrapper" id="grading-raw-wrapper"
+                style="position: absolute; inset: 0; width: 50%; overflow: hidden; border-right: 2px solid var(--cyan); z-index: 5;">
+                <video id="grading-video-raw" src="uploads/first.mp4" loop muted playsinline
+                  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; max-width: none;"></video>
+              </div>
+
+              <!-- HUD tags for RAW and GRADED -->
+              <div
+                style="position: absolute; top: 1rem; left: 1rem; z-index: 10; font-family: var(--font-mono); font-size: 0.6875rem; background: rgba(0,0,0,0.6); padding: 0.25rem 0.5rem; border-radius: 0.25rem; color: #fff;">
+                RAW</div>
+              <div
+                style="position: absolute; top: 1rem; right: 1rem; z-index: 10; font-family: var(--font-mono); font-size: 0.6875rem; background: rgba(0,229,255,0.2); padding: 0.25rem 0.5rem; border-radius: 0.25rem; color: var(--cyan); border: 1px solid var(--cyan);">
+                GRADED</div>
+
+              <!-- Drag handle -->
+              <div class="grading-slider-handle" id="grading-slider-handle"
+                style="position: absolute; top: 0; bottom: 0; left: 50%; width: 4px; background: var(--cyan); z-index: 10; cursor: ew-resize; transform: translateX(-50%); display: flex; align-items: center; justify-content: center;">
+                <div
+                  style="width: 2rem; height: 2rem; border-radius: 50%; background: var(--cyan); display: flex; align-items: center; justify-content: center; box-shadow: 0 0 15px rgba(0,229,255,0.8); border: 2px solid #000;">
+                  <i data-lucide="chevrons-left-right" style="width: 14px; height: 14px; color: #000;"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Case Study Text -->
+            <div class="case-study-info">
+              <span class="text-2xs font-mono"
+                style="color: var(--cyan); letter-spacing: 0.2em; text-transform: uppercase;">CASE_01 / COLOR
+                GRADING</span>
+              <h3 class="font-display text-2xl font-bold mt-2 mb-4" id="grading-case-title">Cinematic Slowmo Grade</h3>
+              <p style="color: var(--muted); line-height: 1.6; margin-bottom: 2rem;" id="grading-case-desc">
+                Transforming flat Log profiles into moody, high-contrast cinematic visuals with customized
+                orange-and-teal tones.
+              </p>
+
+              <!-- Tab switchers for cases -->
+              <div style="display: flex; gap: 0.5rem;">
+                <button class="btn-ghost grading-tab-btn active" data-idx="0"
+                  style="padding: 0.5rem 1rem; font-size: 0.75rem; border-radius: 0.5rem;">Slowmo Edit</button>
+                <button class="btn-ghost grading-tab-btn" data-idx="1"
+                  style="padding: 0.5rem 1rem; font-size: 0.75rem; border-radius: 0.5rem;">Promo Reel</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Case 2: Sound Design Audio Stems -->
+        <div class="case-study-card reveal glass">
+          <div class="case-study-grid"
+            style="display: grid; grid-template-columns: 1fr; gap: 2.5rem; align-items: center;">
+
+            <!-- Video & Timeline Waves -->
+            <div style="display: flex; flex-direction: column; gap: 1.5rem; width: 100%;">
+              <div class="sound-video-container shadow-neon-blue"
+                style="position: relative; width: 100%; aspect-ratio: 9/16; max-width: 340px; margin: 0 auto; border-radius: 1rem; overflow: hidden; border: 1px solid var(--border); background: #000;">
+                <video id="sound-video" src="uploads/second.mp4" loop muted playsinline
+                  style="width: 100%; height: 100%; object-fit: cover;"></video>
+                <div
+                  style="position: absolute; bottom: 1rem; left: 1rem; font-family: var(--font-mono); font-size: 0.6875rem; background: rgba(0,0,0,0.6); padding: 0.25rem 0.5rem; border-radius: 0.25rem; color: var(--purple);">
+                  AUDIO STEM BREAKDOWN</div>
+                <div class="sound-play-overlay" id="sound-play-overlay"
+                  style="position: absolute; inset: 0; background: rgba(0,0,0,0.4); display: flex; align-items: center; justify-content: center; cursor: pointer; transition: opacity 0.3s; z-index: 5;">
+                  <button
+                    style="width: 4rem; height: 4rem; border-radius: 50%; background: var(--purple); border: none; box-shadow: 0 0 20px rgba(217, 70, 239, 0.4); display: flex; align-items: center; justify-content: center; cursor: pointer;">
+                    <i data-lucide="play"
+                      style="width: 24px; height: 24px; fill: white; color: white; margin-left: 2px;"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Timeline Tracks Visualization -->
+              <div class="timeline-tracks"
+                style="display: flex; flex-direction: column; gap: 0.75rem; background: rgba(0,0,0,0.4); padding: 1rem; border-radius: 1rem; border: 1px solid var(--border);">
+                <!-- Track 1: Ambience -->
+                <div class="timeline-track" id="track-ambience" style="display: flex; align-items: center; gap: 1rem;">
+                  <span class="font-mono text-2xs" style="width: 60px; color: var(--cyan);">AMBIENT</span>
+                  <div class="wave-container"
+                    style="flex: 1; height: 20px; position: relative; overflow: hidden; border-radius: 0.25rem; background: rgba(255,255,255,0.02);">
+                    <div class="wave-bar-pulse wave-ambience"
+                      style="position: absolute; inset: 0; background: repeating-linear-gradient(90deg, var(--cyan) 0px, var(--cyan) 2px, transparent 2px, transparent 6px); opacity: 0.8; transform: scaleY(0.6);">
+                    </div>
+                  </div>
+                </div>
+                <!-- Track 2: SFX -->
+                <div class="timeline-track" id="track-sfx" style="display: flex; align-items: center; gap: 1rem;">
+                  <span class="font-mono text-2xs" style="width: 60px; color: var(--purple);">FOLEY/SFX</span>
+                  <div class="wave-container"
+                    style="flex: 1; height: 20px; position: relative; overflow: hidden; border-radius: 0.25rem; background: rgba(255,255,255,0.02);">
+                    <div class="wave-bar-pulse wave-sfx"
+                      style="position: absolute; inset: 0; background: repeating-linear-gradient(90deg, var(--purple) 0px, var(--purple) 2px, transparent 2px, transparent 6px); opacity: 0.8; transform: scaleY(0.8);">
+                    </div>
+                  </div>
+                </div>
+                <!-- Track 3: Music -->
+                <div class="timeline-track" id="track-music" style="display: flex; align-items: center; gap: 1rem;">
+                  <span class="font-mono text-2xs" style="width: 60px; color: var(--pink);">BEAT/MUSIC</span>
+                  <div class="wave-container"
+                    style="flex: 1; height: 20px; position: relative; overflow: hidden; border-radius: 0.25rem; background: rgba(255,255,255,0.02);">
+                    <div class="wave-bar-pulse wave-music"
+                      style="position: absolute; inset: 0; background: repeating-linear-gradient(90deg, var(--pink) 0px, var(--pink) 2px, transparent 2px, transparent 6px); opacity: 0.8;">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Stems Control Panel -->
+            <div class="case-study-info">
+              <span class="text-2xs font-mono"
+                style="color: var(--purple); letter-spacing: 0.2em; text-transform: uppercase;">CASE_02 / SOUND
+                DESIGN</span>
+              <h3 class="font-display text-2xl font-bold mt-2 mb-4">Sound Design & Foley Stems</h3>
+              <p style="color: var(--muted); line-height: 1.6; margin-bottom: 2rem;">
+                Toggle layers in real-time to hear how the acoustic environment of the promo reel is constructed. Blend
+                atmosphere, foley, and music dynamically.
+              </p>
+
+              <!-- Stem Toggles -->
+              <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                <button class="stem-toggle-btn active glass" data-stem="ambience"
+                  style="display: flex; align-items: center; justify-content: space-between; padding: 0.75rem 1.25rem; border-radius: 0.75rem; border: 1px solid var(--cyan); color: var(--cyan); background: rgba(0,229,255,0.05); text-align: left; cursor: pointer; font-family: var(--font-sans); font-size: 0.875rem; font-weight: 500;">
+                  <span style="display: flex; align-items: center; gap: 0.75rem;"><i data-lucide="audio-lines"
+                      style="width: 16px; height: 16px;"></i> Ambience Layer</span>
+                  <span class="toggle-status font-mono text-2xs">ON</span>
+                </button>
+                <button class="stem-toggle-btn active glass" data-stem="sfx"
+                  style="display: flex; align-items: center; justify-content: space-between; padding: 0.75rem 1.25rem; border-radius: 0.75rem; border: 1px solid var(--purple); color: var(--purple); background: rgba(217,70,239,0.05); text-align: left; cursor: pointer; font-family: var(--font-sans); font-size: 0.875rem; font-weight: 500;">
+                  <span style="display: flex; align-items: center; gap: 0.75rem;"><i data-lucide="zap"
+                      style="width: 16px; height: 16px;"></i> Foley & Impacts</span>
+                  <span class="toggle-status font-mono text-2xs">ON</span>
+                </button>
+                <button class="stem-toggle-btn active glass" data-stem="music"
+                  style="display: flex; align-items: center; justify-content: space-between; padding: 0.75rem 1.25rem; border-radius: 0.75rem; border: 1px solid var(--pink); color: var(--pink); background: rgba(255,100,200,0.05); text-align: left; cursor: pointer; font-family: var(--font-sans); font-size: 0.875rem; font-weight: 500;">
+                  <span style="display: flex; align-items: center; gap: 0.75rem;"><i data-lucide="music"
+                      style="width: 16px; height: 16px;"></i> Background Beat</span>
+                  <span class="toggle-status font-mono text-2xs">ON</span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Case 3: VFX Breakdown -->
+        <div class="case-study-card reveal glass">
+          <div class="case-study-grid"
+            style="display: grid; grid-template-columns: 1fr; gap: 2.5rem; align-items: center;">
+
+            <!-- Screen with SVG HUD and canvas overlays -->
+            <div class="vfx-screen-container shadow-neon-blue step-raw" id="vfx-screen-container"
+              style="position: relative; width: 100%; aspect-ratio: 9/16; max-width: 340px; margin: 0 auto; border-radius: 1rem; overflow: hidden; border: 1px solid var(--border); background: #000; user-select: none;">
+              <video id="vfx-video" src="uploads/third.mp4" loop muted playsinline
+                style="width: 100%; height: 100%; object-fit: cover;"></video>
+
+              <!-- VFX Tracking dots and wireframes -->
+              <div class="vfx-hud-layer vfx-tracking-wireframe" id="vfx-tracking-layer"
+                style="position: absolute; inset: 0; pointer-events: none; opacity: 0; transition: opacity 0.3s; z-index: 5;">
+                <svg width="100%" height="100%" style="position: absolute; inset: 0;">
+                  <!-- Grid patterns -->
+                  <defs>
+                    <pattern id="vfx-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(0, 229, 255, 0.25)" stroke-width="1" />
+                    </pattern>
+                  </defs>
+                  <rect width="100%" height="100%" fill="url(#vfx-grid)" />
+                  <!-- Tracking points -->
+                  <circle cx="20%" cy="30%" r="5" fill="none" stroke="var(--cyan)" stroke-width="1.5" />
+                  <line x1="20%" y1="20%" x2="20%" y2="40%" stroke="var(--cyan)" stroke-width="0.5"
+                    stroke-dasharray="2" />
+                  <line x1="10%" y1="30%" x2="30%" y2="30%" stroke="var(--cyan)" stroke-width="0.5"
+                    stroke-dasharray="2" />
+
+                  <circle cx="75%" cy="45%" r="5" fill="none" stroke="var(--cyan)" stroke-width="1.5" />
+                  <line x1="75%" y1="35%" x2="75%" y2="55%" stroke="var(--cyan)" stroke-width="0.5"
+                    stroke-dasharray="2" />
+                  <line x1="65%" y1="45%" x2="85%" y2="45%" stroke="var(--cyan)" stroke-width="0.5"
+                    stroke-dasharray="2" />
+
+                  <circle cx="50%" cy="70%" r="5" fill="none" stroke="var(--cyan)" stroke-width="1.5" />
+                  <line x1="50%" y1="60%" x2="50%" y2="80%" stroke="var(--cyan)" stroke-width="0.5"
+                    stroke-dasharray="2" />
+                  <line x1="40%" y1="70%" x2="60%" y2="70%" stroke="var(--cyan)" stroke-width="0.5"
+                    stroke-dasharray="2" />
+                </svg>
+              </div>
+
+              <!-- VFX Neon elements mask overlay -->
+              <div class="vfx-hud-layer vfx-compositing-elements" id="vfx-comp-layer"
+                style="position: absolute; inset: 0; pointer-events: none; opacity: 0; transition: opacity 0.3s; z-index: 6;">
+                <div
+                  style="position: absolute; top: 15%; left: 15%; border: 1px solid var(--purple); background: rgba(217, 70, 239, 0.15); padding: 0.5rem; border-radius: 0.5rem; box-shadow: 0 0 20px rgba(217,70,239,0.3); font-family: var(--font-mono); font-size: 0.625rem; color: var(--purple);">
+                  COMPOSITE ELEMENT [CYBER_GLOW]
+                </div>
+                <div
+                  style="position: absolute; bottom: 20%; right: 15%; border: 1px dashed var(--cyan); background: rgba(0, 229, 255, 0.08); width: 150px; height: 150px; border-radius: 50%; box-shadow: inset 0 0 20px rgba(0,229,255,0.4); animation: float-y 6s ease-in-out infinite;">
+                </div>
+              </div>
+
+              <!-- Vignette & final grading details -->
+              <div class="vfx-hud-layer vfx-final-grade" id="vfx-grade-layer"
+                style="position: absolute; inset: 0; pointer-events: none; opacity: 0; transition: opacity 0.3s; z-index: 7; box-shadow: inset 0 0 80px rgba(0,0,0,0.8); background: rgba(0,229,255,0.02);">
+              </div>
+            </div>
+
+            <!-- Step controls -->
+            <div class="case-study-info">
+              <span class="text-2xs font-mono"
+                style="color: var(--pink); letter-spacing: 0.2em; text-transform: uppercase;">CASE_03 / VFX
+                BREAKDOWN</span>
+              <h3 class="font-display text-2xl font-bold mt-2 mb-4">VFX Compositing Breakdown</h3>
+              <p style="color: var(--muted); line-height: 1.6; margin-bottom: 2rem;" id="vfx-step-desc">
+                Straight out of the camera desaturated raw portrait.
+              </p>
+
+              <!-- VFX Steps List -->
+              <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                <button class="vfx-step-btn active glass" data-step="raw"
+                  style="display: flex; align-items: center; gap: 1rem; padding: 0.75rem 1.25rem; border-radius: 0.75rem; text-align: left; cursor: pointer; font-family: var(--font-mono); font-size: 0.75rem; width: 100%; border-color: var(--border); color: var(--text);">
+                  <span class="step-num">01</span> Raw Plate
+                </button>
+                <button class="vfx-step-btn glass" data-step="tracking"
+                  style="display: flex; align-items: center; gap: 1rem; padding: 0.75rem 1.25rem; border-radius: 0.75rem; text-align: left; cursor: pointer; font-family: var(--font-mono); font-size: 0.75rem; width: 100%; border-color: var(--border); color: var(--text);">
+                  <span class="step-num">02</span> Tracking Data
+                </button>
+                <button class="vfx-step-btn glass" data-step="compositing"
+                  style="display: flex; align-items: center; gap: 1rem; padding: 0.75rem 1.25rem; border-radius: 0.75rem; text-align: left; cursor: pointer; font-family: var(--font-mono); font-size: 0.75rem; width: 100%; border-color: var(--border); color: var(--text);">
+                  <span class="step-num">03</span> Element Compositing
+                </button>
+                <button class="vfx-step-btn glass" data-step="final"
+                  style="display: flex; align-items: center; gap: 1rem; padding: 0.75rem 1.25rem; border-radius: 0.75rem; text-align: left; cursor: pointer; font-family: var(--font-mono); font-size: 0.75rem; width: 100%; border-color: var(--border); color: var(--text);">
+                  <span class="step-num">04</span> Final Compound
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== SKILLS SECTION ========== -->
+    <section id="skills" class="max-width-limit">
+      <div class="skills-gradient-glow"></div>
+
+      <div class="section-eyebrow">
+        <span class="section-eyebrow-seq">SEQ_07/09</span>
+        <span class="section-eyebrow-line"></span>
+        <span class="section-eyebrow-label">TECHNICAL ARSENAL</span>
+      </div>
+
+      <div>
+        <h2 class="skills-title">Editing Mastery</h2>
+        <p class="skills-desc">Specialized techniques perfected over years of creation.</p>
+
+        <!-- Editing Skills Tags filled dynamically by JS -->
+        <div class="skills-tags-container" id="skills-tags-container"></div>
+      </div>
+
+      <div>
+        <h2 class="software-title">Software Tools</h2>
+
+        <!-- Software Grid filled dynamically by JS -->
+        <div class="software-grid" id="software-grid"></div>
+      </div>
+    </section>
+
+    <!-- ========== SERVICES SECTION ========== -->
+    <section id="services" class="max-width-limit">
+      <div class="services-gradient-glow"></div>
+
+      <div class="section-eyebrow">
+        <span class="section-eyebrow-seq">SEQ_08/09</span>
+        <span class="section-eyebrow-line"></span>
+        <span class="section-eyebrow-label">SERVICES OFFERED</span>
+      </div>
+
+      <blockquote class="services-blockquote">
+        "Creativity is not about having <span class="gradient-text">ideas</span>. It's about bringing them to <span
+          class="gradient-text">life</span>."
+      </blockquote>
+
+      <!-- Services Grid filled dynamically by JS -->
+      <div class="services-grid" id="services-grid"></div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section id="contact" class="max-width-limit" style="padding-bottom: 8rem;">
+      <div class="section-eyebrow">
+        <span class="section-eyebrow-seq">SEQ_09/09</span>
+        <span class="section-eyebrow-line"></span>
+        <span class="section-eyebrow-label">GET IN TOUCH</span>
+      </div>
+
+      <h2 class="contact-title">
+        Let's create something <span class="gradient-text">legendary</span> together.
+      </h2>
+
+      <div class="contact-grid">
+        <!-- Contact Rows list -->
+        <div class="contact-rows" id="contact-rows-container">
+          <!-- Dynamic contact rows go here -->
+        </div>
+
+        <!-- Instagram Profile Card -->
+        <a href="https://www.instagram.com/i.krizhh?igsh=d3hwbzV1NXhlenRo" target="_blank" rel="noopener noreferrer" class="ig-card reveal">
+          <div class="ig-blob ig-blob-1"></div>
+          <div class="ig-blob ig-blob-2"></div>
+          <div class="ig-blob ig-blob-3"></div>
+          <div class="ig-scanline"></div>
+          <div class="ig-topbar">
+            <div class="ig-topbar-dots">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="ig-topbar-brand">
+              <i data-lucide="instagram" class="ig-logo-icon"></i>
+              <span>INSTAGRAM</span>
+            </div>
+            <div class="ig-follow-badge">Follow</div>
+          </div>
+          <div class="ig-avatar-section">
+            <div class="ig-avatar-wrap">
+              <div class="ig-story-ring"></div>
+              <div class="ig-avatar-inner">
+                <img src="uploads/athulkrishna.jpg" alt="Athulkrishna T P" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+            </div>
+            <div class="ig-profile-info">
+              <div class="ig-username">i.krizhh</div>
+              <div class="ig-fullname">Athul krishna</div>
+              <div class="ig-pronoun">he/his</div>
+              <div class="ig-bio-tag">Editor • Under 🧍 ble</div>
+            </div>
+          </div>
+          <div class="ig-stats">
+            <div class="ig-stat">
+              <div class="ig-stat-num">5</div>
+              <div class="ig-stat-lbl">posts</div>
+            </div>
+            <div class="ig-stat-sep"></div>
+            <div class="ig-stat">
+              <div class="ig-stat-num">1.4K</div>
+              <div class="ig-stat-lbl">followers</div>
+            </div>
+            <div class="ig-stat-sep"></div>
+            <div class="ig-stat">
+              <div class="ig-stat-num">2.5K</div>
+              <div class="ig-stat-lbl">following</div>
+            </div>
+          </div>
+          <div class="ig-post-grid">
+            <div class="ig-post ig-post-1">
+              <div class="ig-post-views">
+                <i data-lucide="play" style="width: 10px; height: 10px; fill: white; stroke: none; margin-right: 2px;"></i>3.5K
+              </div>
+            </div>
+            <div class="ig-post ig-post-2">
+              <div class="ig-post-views">
+                <i data-lucide="play" style="width: 10px; height: 10px; fill: white; stroke: none; margin-right: 2px;"></i>3.4K
+              </div>
+            </div>
+            <div class="ig-post ig-post-3">
+              <div class="ig-post-views">
+                <i data-lucide="play" style="width: 10px; height: 10px; fill: white; stroke: none; margin-right: 2px;"></i>4.8K
+              </div>
+            </div>
+          </div>
+          <div class="ig-footer">
+            <span class="ig-cta-text">View Profile</span>
+            <i data-lucide="arrow-up-right"></i>
+          </div>
+        </a>
+
+        <!-- Contact Form Box -->
+        <div class="contact-form-container glass" id="form-card-container">
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label class="form-label" for="form-name">NAME *</label>
+              <input type="text" id="form-name" required placeholder="Your name" class="field">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="form-email">EMAIL *</label>
+              <input type="email" id="form-email" required placeholder="you@example.com" class="field">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="form-message">MESSAGE *</label>
+              <textarea id="form-message" required rows="4" placeholder="Tell me about your vision..." class="field"
+                style="resize: none;"></textarea>
+            </div>
+            <button type="submit" class="contact-form-submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Video Modal Overlay -->
+  <div class="modal-overlay" id="video-modal">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">
+        <i data-lucide="x" style="width: 24px; height: 24px;"></i>
+      </button>
+      <video src="" controls class="modal-video-element" id="modal-video"></video>
+      <div class="modal-info">
+        <h3 class="modal-title" id="modal-video-title">Title</h3>
+        <p class="modal-desc" id="modal-video-category">Category</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CDN scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://unpkg.com/lucide@0.475.0"></script>
+  <script src="portfolio-data.js"></script>
+  <script src="script.js" defer></script>
+</body>
+
+</html>

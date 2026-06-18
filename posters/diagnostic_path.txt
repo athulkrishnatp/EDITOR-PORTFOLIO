@@ -1,0 +1,1 @@
+﻿CurrentLocation: C:\ Drive: C Provider: Microsoft.PowerShell.Core\FileSystem

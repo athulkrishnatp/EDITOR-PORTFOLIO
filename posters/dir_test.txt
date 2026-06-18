@@ -1,0 +1,4 @@
+﻿C:\Windows\Temp -> Error: Exception calling "GetFiles" with "1" argument(s): "Access to the path 'C:\Windows\Temp' is denied."
+C:\Temp -> Error: Exception calling "GetFiles" with "1" argument(s): "Could not find a part of the path 'C:\Temp'."
+C:\Users\Netcom\AppData\Local\Packages\ag-sandbox-4bxjkiuetymvqmhxfuosaq55qg\AC\Temp -> Exists: True, Files count: 0
+C:\Users\Netcom\Downloads\portfolio files -> Exists: True, Files count: 8
